@@ -1,0 +1,3 @@
+2025-04-23 21:59:46	4.4s	furious_heyrovsky	ERR	56b208d95565179bf02380bd485caca5	0dcaf69a-6ec0-4d8d-8d91-c5d590e9d132	nextflow run main.nf -profile docker
+2025-04-23 22:06:53	2.7s	big_avogadro	ERR	56b208d95565179bf02380bd485caca5	9b31d8d3-0b59-4d84-b1b9-488a2352b900	nextflow run main.nf -profile docker
+2025-04-23 22:14:46	37.9s	suspicious_roentgen	OK	56b208d95565179bf02380bd485caca5	c4ff7946-5a2c-4531-b163-5965335214f9	nextflow run main.nf -profile docker

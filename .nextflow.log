@@ -1,0 +1,71 @@
+Apr-23 22:14:45.376 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile docker
+Apr-23 22:14:45.474 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.1
+Apr-23 22:14:45.503 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/LiLei/.nextflow/plugins; core-plugins: nf-amazon@2.9.1,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.2,nf-tower@1.9.3,nf-wave@1.7.3
+Apr-23 22:14:45.537 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Apr-23 22:14:45.538 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Apr-23 22:14:45.542 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Apr-23 22:14:45.556 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Apr-23 22:14:45.581 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/LiLei/Downloads/coding_interview/prepare_moonwalk/nextflow-fastqc-pipeline/nextflow.config
+Apr-23 22:14:45.584 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/LiLei/Downloads/coding_interview/prepare_moonwalk/nextflow-fastqc-pipeline/nextflow.config
+Apr-23 22:14:45.617 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/LiLei/.nextflow/secrets/store.json
+Apr-23 22:14:45.621 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@5bdaf2ce] - activable => nextflow.secret.LocalSecretsProvider@5bdaf2ce
+Apr-23 22:14:45.629 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Apr-23 22:14:46.157 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [test, docker]
+Apr-23 22:14:46.189 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Apr-23 22:14:46.211 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [suspicious_roentgen] DSL2 - revision: 56b208d955
+Apr-23 22:14:46.213 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Apr-23 22:14:46.213 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Apr-23 22:14:46.282 [main] DEBUG nextflow.Session - Session UUID: c4ff7946-5a2c-4531-b163-5965335214f9
+Apr-23 22:14:46.283 [main] DEBUG nextflow.Session - Run name: suspicious_roentgen
+Apr-23 22:14:46.283 [main] DEBUG nextflow.Session - Executor pool size: 16
+Apr-23 22:14:46.295 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Apr-23 22:14:46.302 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Apr-23 22:14:46.342 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.10.1 build 5930
+  Created: 18-11-2024 12:21 UTC (04:21 PDT)
+  System: Mac OS X 14.6.1
+  Runtime: Groovy 4.0.23 on OpenJDK 64-Bit Server VM 17.0.13+11-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 51134@LiLei-M57-2.attlocal.net [192.168.1.70]
+  CPUs: 16 - Mem: 32 GB (134 MB) - Swap: 1 GB (494.5 MB)
+Apr-23 22:14:46.360 [main] DEBUG nextflow.Session - Work-dir: /Users/LiLei/Downloads/coding_interview/prepare_moonwalk/nextflow-fastqc-pipeline/work [Mac OS X]
+Apr-23 22:14:46.360 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/LiLei/Downloads/coding_interview/prepare_moonwalk/nextflow-fastqc-pipeline/bin
+Apr-23 22:14:46.373 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Apr-23 22:14:46.386 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Apr-23 22:14:46.417 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Apr-23 22:14:46.430 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Apr-23 22:14:46.514 [main] DEBUG nextflow.Session - Session start
+Apr-23 22:14:46.699 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Apr-23 22:14:46.714 [main] INFO  nextflow.Nextflow - F A S T Q C   P I P E L I N E
+===========================
+reads        : test-data/*.fastq
+outdir       : results
+
+Apr-23 22:14:47.095 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Apr-23 22:14:47.096 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Apr-23 22:14:47.103 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Apr-23 22:14:47.111 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=32 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Apr-23 22:14:47.114 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Apr-23 22:14:47.190 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: FASTQC
+Apr-23 22:14:47.191 [main] DEBUG nextflow.Session - Igniting dataflow network (2)
+Apr-23 22:14:47.199 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FASTQC
+Apr-23 22:14:47.200 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_a7e1e4d524aca18d: /Users/LiLei/Downloads/coding_interview/prepare_moonwalk/nextflow-fastqc-pipeline/./modules/fastqc.nf
+  Script_ea9f87b8112d64fa: /Users/LiLei/Downloads/coding_interview/prepare_moonwalk/nextflow-fastqc-pipeline/main.nf
+Apr-23 22:14:47.200 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Apr-23 22:14:47.200 [main] DEBUG nextflow.Session - Session await
+Apr-23 22:14:47.200 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: test-data/; pattern: *.fastq; options: [:]
+Apr-23 22:14:47.438 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Apr-23 22:14:47.441 [Task submitter] INFO  nextflow.Session - [50/6d2fc1] Submitted process > FASTQC (FastQC on sample1)
+Apr-23 22:15:23.637 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: FASTQC (FastQC on sample1); status: COMPLETED; exit: 0; error: -; workDir: /Users/LiLei/Downloads/coding_interview/prepare_moonwalk/nextflow-fastqc-pipeline/work/50/6d2fc1d4eec4d6d5a1ce9b41361e12]
+Apr-23 22:15:23.638 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Apr-23 22:15:23.687 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Apr-23 22:15:23.695 [main] DEBUG nextflow.Session - Session await > all processes finished
+Apr-23 22:15:23.732 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Apr-23 22:15:23.732 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Apr-23 22:15:23.735 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Apr-23 22:15:23.735 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Apr-23 22:15:23.744 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1m 12s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=2; peakMemory=2 GB; ]
+Apr-23 22:15:23.885 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Apr-23 22:15:23.907 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Apr-23 22:15:23.908 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

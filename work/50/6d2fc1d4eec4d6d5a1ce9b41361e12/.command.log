@@ -1,0 +1,44 @@
+Unable to find image 'quay.io/biocontainers/fastqc:0.11.9--0' locally
+0.11.9--0: Pulling from biocontainers/fastqc
+a3ed95caeb02: Pulling fs layer
+77c6c00e8b61: Pulling fs layer
+3aaade50789a: Pulling fs layer
+00cf8b9f3d2a: Pulling fs layer
+7ff999a2256f: Pulling fs layer
+d2ba336f2e44: Pulling fs layer
+dfda3e01f2b6: Pulling fs layer
+10c3bb32200b: Pulling fs layer
+6d92b3a49ebf: Pulling fs layer
+dfda3e01f2b6: Waiting
+7ff999a2256f: Waiting
+d2ba336f2e44: Waiting
+10c3bb32200b: Waiting
+00cf8b9f3d2a: Waiting
+a3ed95caeb02: Verifying Checksum
+a3ed95caeb02: Download complete
+3aaade50789a: Verifying Checksum
+3aaade50789a: Download complete
+a3ed95caeb02: Pull complete
+00cf8b9f3d2a: Download complete
+7ff999a2256f: Verifying Checksum
+7ff999a2256f: Download complete
+d2ba336f2e44: Download complete
+dfda3e01f2b6: Verifying Checksum
+dfda3e01f2b6: Download complete
+10c3bb32200b: Download complete
+77c6c00e8b61: Verifying Checksum
+77c6c00e8b61: Download complete
+77c6c00e8b61: Pull complete
+3aaade50789a: Pull complete
+00cf8b9f3d2a: Pull complete
+7ff999a2256f: Pull complete
+d2ba336f2e44: Pull complete
+dfda3e01f2b6: Pull complete
+10c3bb32200b: Pull complete
+6d92b3a49ebf: Verifying Checksum
+6d92b3a49ebf: Download complete
+6d92b3a49ebf: Pull complete
+Digest: sha256:70de12400206b9c1784c8dfd019cfe4e42eed9a42eabf6c61eb68342843bdaab
+Status: Downloaded newer image for quay.io/biocontainers/fastqc:0.11.9--0
+Started analysis of sample1.fastq
+Analysis complete for sample1.fastq
