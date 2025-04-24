@@ -1,0 +1,31 @@
+// Default parameters
+params {
+    reads = "test-data/*.fastq"
+    outdir = "results"
+}
+
+// Process configuration
+process {
+    cpus = 2
+    memory = '2 GB'
+}
+
+// Profiles
+profiles {
+    docker {
+        docker.enabled = true
+        process.container = 'quay.io/biocontainers/fastqc:0.11.9--0'
+    }
+    
+    test {
+        params.reads = "test-data/*.fastq"
+    }
+}
+
+// Manifest
+manifest {
+    name = 'nextflow-fastqc-pipeline'
+    author = 'Your Name'
+    description = 'A simple Nextflow pipeline to run FastQC on FASTQ files'
+    version = '1.0.0'
+}
