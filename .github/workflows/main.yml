@@ -33,7 +33,7 @@ jobs:
           echo "FastQC process test passed successfully"
       
       - name: Upload test results
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2  # Changed from v3 to v2
         with:
           name: fastqc-results
           path: results/fastqc/
